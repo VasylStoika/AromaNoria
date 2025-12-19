@@ -1,12 +1,35 @@
-# 1. Ігнорувати ВСЕ (файли і папки) за замовчуванням
-*
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# 2. Але не ігнорувати самі папки (щоб git міг зайти всередину)
-!*/
+# Node modules
+node_modules
+dist
+dist-ssr
+*.local
 
-# 3. Не ігнорувати файли .gitkeep (вони тримають папки)
-!.gitkeep
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs
+*.njsproj
+*.sln
+*.sw?
 
-# 4. Якщо треба залишити якісь специфічні файли (наприклад, README), розкоментуйте:
-# !README.md
-# !.gitignore
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Testing
+coverage
+cypress/videos
+cypress/screenshots
